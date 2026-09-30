@@ -2,11 +2,9 @@
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="pic.png">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Fatemeh | Frontend Developer & UI/UX Designer</title>
-    
     <meta name="description" content="پورتفولیوی فاطمه؛ توسعه‌دهنده فرانت‌اند و طراح تجربه‌های دیجیتال تمیز، تعاملی و معنادار.">
     <meta name="author" content="Fatemeh">
     <meta name="keywords" content="Fatemeh, frontend developer, web designer, UI UX, HTML, CSS, JavaScript, portfolio">
@@ -17,112 +15,178 @@
     <meta property="og:description" content="طراحی و توسعه تجربه‌های دیجیتال، تمیز و تعاملی.">
     <meta property="og:url" content="https://fatemehdev-dev.github.io/portfolio/">
     <meta property="og:image" content="https://raw.githubusercontent.com/fatemehdev-dev/portfolio/main/pic.png">
-    <meta property="og:image:alt" content="پورتفولیوی فاطمه، توسعه دهنده فرانت اند">
+    <meta property="og:image:alt" content="پورتفولیوی فاطمه، توسعه‌دهنده فرانت‌اند">
 
-    <!-- فونت و استایل -->
+    <link rel="icon" type="image/png" href="pic.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header>
-    <h1 class="logo">Fatemeh</h1>
-    <nav>
-        <a href="#work-section">work</a>
-        <a href="#contact">contact</a>
-    </nav>
-</header>
+    <a class="skip-link" href="#main-content">رفتن به محتوای اصلی</a>
 
-<section class="hero">
-      <h2>من طراح و توسعه دهنده فرانت اند هستم</h2>
-      <p>I turn ideas into clean, interactive and thoughtful digital experiences — one interface at a time</p>
-      <div class="CTA">
-          <a href="#work-section">کار های من</a>
-      </div>
-</section>
+    <header class="site-header">
+        <a class="logo" href="#" aria-label="Fatemeh — خانه">Fatemeh</a>
 
-<section class="skills-section">
-    <div class="section-title">
-        <p>دست‌مایه‌ها و ابزارها</p>
-        <span>What I craft with</span>
-    </div>
+        <nav class="site-nav" aria-label="ناوبری اصلی">
+            <a href="#work-section">work</a>
+            <a href="#contact">contact</a>
+        </nav>
+    </header>
 
-    <div class="skills-grid">
-        <div class="skill-card">
-            <h3>معماری و منطق وب</h3>
-            <p class="skill-desc">خلق ساختارهای تمیز، معنایی و پایدار در سمت کاربر با رویکرد مینیمال.</p>
-            <div class="skill-tags">
-                <span>HTML5 / Semantic</span>
-                <span>Modern CSS</span>
-                <span>Vanilla JS</span>
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+            <p class="eyebrow">Frontend · UI/UX</p>
+     <h1 id="hero-title">من طراح و توسعه دهنده فرانت اند هستم</h1>
+
+            <p class="hero-copy">
+                I turn ideas into clean, interactive and thoughtful digital experiences —
+                one interface at a time
+            </p>
+            <a class="cta" href="#work-section">
+                <span>کارهای من</span>
+            </a>
+        </section>
+
+        <section class="skills-section" aria-labelledby="skills-title">
+            <div class="section-title" id="skills-title">
+                <p>دست‌مایه‌ها و ابزارها</p>
+                <span>What I craft with</span>
             </div>
-        </div>
-        <div class="skill-card">
-            <h3>طراحی تجربه و هنر بصری</h3>
-            <p class="skill-desc">ترکیب اصول UI/UX با زیبایی‌شناسی کلاسیک، تایپوگرافی دقیق و طراحی واکنش‌گرا.</p>
-            <div class="skill-tags">
-                <span>UI/UX Design</span>
-                <span>Design Systems</span>
-                <span>Micro-Interactions</span>
-            </div>
-        </div>
-    </div>
-</section>
 
-<section id="work-section">
-    <p class="work-title">آنچه که هنر ذهن من است</p> 
-    <div class="projects">
-        <div class="coming-project">
-    <span class="coming-label">Coming Soon</span>
-    <h3>A new experience is coming...</h3>
-    <p>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <span class="card-index" aria-hidden="true">01</span>
+                    <h2>معماری و منطق وب</h2>
+                    <p class="skill-desc">
+                        خلق ساختارهای تمیز، معنایی و پایدار در سمت کاربر با رویکرد مینیمال.
+                    </p>
+
+           <div class="skill-tags" aria-label="مهارت‌ها">
+                        <span>HTML5 / Semantic</span>
+                        <span>Modern CSS</span>
+                        <span>Vanilla JS</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <span class="card-index" aria-hidden="true">02</span>
+                    <h2>طراحی تجربه و هنر بصری</h2>
+                    <p class="skill-desc">
+                        ترکیب اصول UI/UX با زیبایی‌شناسی کلاسیک، تایپوگرافی دقیق و طراحی واکنش‌گرا.
+                    </p>
+
+           <div class="skill-tags" aria-label="مهارت‌ها">
+                        <span>UI/UX Design</span>
+                        <span>Design Systems</span>
+                        <span>Micro-Interactions</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="work-section" class="work-section" aria-labelledby="work-title">
+            <div class="section-title work-heading" id="work-title">
+                <p>آنچه که هنر ذهن من است</p>
+                <span>Selected work & experiments</span>
+            </div>
+
+            <div class="projects">
+                <article class="coming-project">
+                    <div class="coming-topline">
+           <span class="coming-label">Coming Soon</span>
+               <span class="project-number">01</span>
+                    </div>
+
+                    <div class="coming-content">
+             <p class="project-kicker">In progress</p>
+                 <h2>A new experience is coming...</h2>
+                        <p>
         Something meaningful is currently in the making.
-    </p>
-    <span class="coming-meta">
-        e-commerce website· UI/UX · Frontend
-    </span>
-        </div>
+                        </p>
+                        <span class="coming-meta">
+             e-commerce website · UI/UX · Frontend
+                        </span>
+                    </div>
+                </article>
 
-        <div class="project-card">
-            <div class="image-container">
- <span><a href="https://mahdyarqzv005-byte.github.io/MgArts/" target="_blank">مشاهده پروژه</a></span>
-        <img src="mahdi.jpg" alt="پروژه طراحی">
-            </div>
-            <h3>Mahdi_3D Artist</h3>
-     <p>
-       طراحی و توسعه‌ی پورتفولیویی مینیمال با تمرکز بر نمایش آثار یک هنرمند سه‌بعدی.
-     </p>
-      <div class="project-tags">
-          <span>Frontend</span>
-          <span>UI / UX</span>
-          <span>client work</span>
-          </div>
-        </div>
-        
-        </div>
-</section>
- 
-<section class="contact-section" id="contact">
-    <div class="section-title">
-        <p>پیوند و گفت‌وگو</p>
-        <span>Let's create something meaningful</span>
-    </div>
-    <p class="contact-intro">برای همکاری در پروژه‌های خلاق یا گفت‌وگو، مشتاق هم‌کلامی هستم.</p>
+                <article class="project-card">
+                    <div class="image-container">
+        <img src="mahdi.jpg"
+        alt="پیش‌نمایش وب‌سایت پورتفولیوی Mahdi 3D Artist"
+         loading="lazy">
 
-    <div class="contact-cards">
-        <a href="https://t.me/Hwi38wj" target="_blank" rel="noopener noreferrer" class="contact-card">
-            <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg></div>
-            <div class="card-info">
-                <span class="card-label">تلگرام • Telegram</span>
-                <span class="card-value" dir="ltr">@Hwi38wj</span>
+                <a class="image-action"                          href="https://mahdyarqzv005-byte.github.io/MgArts/"
+       target="_blank" rel="noopener noreferrer"
+             aria-label="مشاهده پروژه Mahdi 3D Artist">
+                            مشاهده پروژه 
+                        </a>
+                    </div>
+
+                    <div class="project-body">
+                        <div class="project-heading">
+             <span class="project-number">02</span>
+                            <h2>Mahdi_3D Artist</h2>
+                        </div>
+
+                        <p>
+                            طراحی و توسعه‌ی پورتفولیویی مینیمال با تمرکز بر نمایش آثار یک هنرمند سه‌بعدی.
+                        </p>
+
+  <div class="project-tags" aria-label="دسته‌بندی پروژه">
+                            <span>Frontend</span>
+                            <span>UI / UX</span>
+                            <span>client work</span>
+                        </div>
+
+                  <a class="project-link"
+                            href="https://mahdyarqzv005-byte.github.io/MgArts/"
+             target="_blank" rel="noopener noreferrer">
+                         
+                        </a>
+                    </div>
+                </article>
             </div>
-        </a>
-    </div>
-</section>
- 
-<footer>
-    <span>© 2026 Fatemeh</span>
-    <span>Designed & Developed by Fatemeh</span>
-</footer>
- 
+        </section>
+
+        <section class="contact-section" id="contact" aria-labelledby="contact-title">
+            <div class="section-title" id="contact-title">
+                <p>پیوند و گفت‌وگو</p>
+          <span>Let's create something meaningful</span>
+            </div>
+
+            <p class="contact-intro">
+                برای همکاری در پروژه‌های خلاق یا گفت‌وگو، مشتاق هم‌کلامی هستم.
+            </p>
+
+            <div class="contact-cards">
+      <a href="https://t.me/Hwi38wj" target="_blank"
+   rel="noopener noreferrer" class="contact-card"
+                 aria-label="ارتباط با فاطمه در تلگرام">
+           <div class="card-icon" aria-hidden="true">
+       <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="1.6"
+      stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </div>
+
+                    <div class="card-info">
+     <span class="card-label">تلگرام · Telegram</span>
+       <span class="card-value" dir="ltr">@Hwi38wj</span>
+                    </div>
+  <span class="contact-arrow" aria-hidden="true">↗</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>© 2026 Fatemeh</span>
+        <span>Designed &amp; Developed by Fatemeh</span>
+    </footer>
 </body>
 </html>
